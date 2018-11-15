@@ -6,11 +6,26 @@
     <title>Aimée wird 30</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <style>
+        .google-maps {
+            position: relative;
+            padding-bottom: 97%; // This is the aspect ratio
+            height: 0;
+            overflow: hidden;
+        }
+        .google-maps iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
   </head>
   <body>
-    <figure class="image is-800x400">
-      <img src="./images/aimee-bach.jpg">
-    </figure>
+  <figure class="image is-800x400">
+    <img src="./images/aimee-bach.jpg">
+  </figure>
   <section class="section">
     <div class="container">
       <h1 class="title">SAVE-THE-DATE</h1>
@@ -37,14 +52,30 @@
           Zu Weihnachten seid ihr auch wieder rechtzeitig zu Hause - versprochen!
         </p>
 
-          <p>
-            <strong>Wir feiern am Samstag, dem 22.&nbsp;Dezember in Basel und können uns
-            nichts Schöneres vorstellen, als euch dabei zu
-            haben.</strong>
-          </p>
-        <div class="notification is-warning">
-            Nähere Infos zur Location <i class="fas fa-map-marker-alt"></i> und
-            genauen Zeit <i class="far fa-clock"></i> folgen in Kürze.
+        <p>
+          <strong>Wir feiern am Samstag, dem 22.&nbsp;Dezember in Basel und können uns
+          nichts Schöneres vorstellen, als euch dabei zu
+          haben.</strong>
+        </p>
+
+        <h2 class="title">Ort & Zeit</h2>
+
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child">
+              <img src="./images/pavillion.JPG">
+            </div>
+          </div>
+          <div class="tile is-4 is-vertical is-parent">
+            <div class="tile is-child">
+              <img src="./images/zeit-ort.jpg">
+            </div>
+            <div class="tile is-child">
+              <div class="google-maps">
+                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Restaurant%20Pavillion%20im%20Park&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+            </div>
+          </div>
         </div>
 
         <p>Liebe Grüsse</br>Aimée & Lukas</p>
